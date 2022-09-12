@@ -36,22 +36,21 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to our users page!</h1>
-      <ul>
+      <ul className="datas">
         {users.map((user) => (
-          <div>
-            <p>This is the user list</p>
-            <ul>
-              <li>Name: {user.fullName}</li>
-              <li>Email: {user.email}</li>
-              <img src={user.photoUrl} alt={user.fullName} width={50} />
+          <div className="wrapper">
+            <ul className="user-data">
+              <li className="user-data-li">Name: {user.fullName}</li>
+              <li className="user-data-li">Email: {user.email}</li>
+              <img className="profile-pic" src={user.photoUrl} alt={user.fullName} />
             </ul>
-            <div>
+            <div className="hobbies">
               {user.hobbies
                 ? user.hobbies.map((hobby) => (
-                    <div>
-                      <li>{hobby.name}</li>
-                      <img src={hobby.imageUrl} alt={hobby.name} width={50} />
-                      <li>{hobby.active ? "Active" : "Passive"}</li>
+                    <div className="hobbies-wrapper">
+                      <li className="hobbies-wrapper-li">{hobby.name}</li>
+                      <img className="icon" src={hobby.imageUrl} alt={hobby.name}  />
+                      <li className="hobbies-wrapper-li">{hobby.active ? "Active" : "Passive"}</li>
                     </div>
                   ))
                 : "This user does not have any hobby!"}

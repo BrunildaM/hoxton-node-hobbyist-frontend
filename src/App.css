@@ -2,41 +2,68 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
-  flex-direction: column;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin: 2rem;
+  padding: 1rem;
+  gap: 0.5rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.datas {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.user-data {
+  text-decoration: none;
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 1rem;
+    margin-right: auto;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  
 
-button {
-  font-size: calc(10px + 2vmin);
-}
+.profile-pic {
+    width: 100px;
+    border: 2px solid black;
+  }
+
+  
+  
+
+  .user-data-li {
+    text-decoration: none;
+    margin: 2rem;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+
+  .hobbies {
+      display: flex;
+      /* flex-direction: column; */
+      margin-right: 1rem;
+      font-size: large;
+      font-size: bold;
+      color: black;
+      padding: 0.5rem;
+    
+  }
+
+  .hobbies-wrapper {
+   margin: 1rem;
+  }
+
+  .hobbies-wrapper-li {
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+
+  .icon {
+     width: 70px;
+     border: 2px solid black;
+  }
